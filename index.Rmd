@@ -1,0 +1,34 @@
+--- 
+title: "Paper 3 Analysis"
+author: "Tharindu Niwarthana"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  set in the _output.yml file.
+  The HTML output format for this example is bookdown::gitbook,
+link-citations: true
+github-repo: "rstudio/bookdown-demo"
+---
+
+# About
+
+Interaction effect of streetlight, residential density, street connectivity and land-use mix with age was tested in this analysis. Each of these BE variable was tested for interaction effect with age as categorical and continuous variables. Both cross-sectional (wave 1) and longitudinal models and their interaction plots were used to investigate the interaction effects.
+
+## Summary of findings
+-  Streetlight showed a significant interaction only in a cross-sectional model which used continuous SL and age variables. See \@ref(SL)
+-  Residential density showed a significant interaction with age in both cross-sectional and longitudinal analysis, and also in both categorical and continuous analysis. The interaction plots were non-parallel. See \@ref(density)
+-  Street connectivity did not show a significant interaction with age in both cross-sectional and longitudinal analysis. Interaction plot in the longitudinal analysis was parallel clearly showing not existence of the interaction. See \@ref(connect)
+-  Land-use mix did not have a significant interaction with age in both types of models. Interaction plots in the longitudinal analysis looks nearly parallel supporting the statistical insignificance of the interaction term. See \@ref(landuse)
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

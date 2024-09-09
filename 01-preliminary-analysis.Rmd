@@ -1,0 +1,48 @@
+# Preliminary Analysis
+
+Similar to the analysis of my second paper, I used the mixed-effects logistic regressions to model the associations. I tested for the interaction effect between streetlight count and age groups. Age grouping was done in two different ways as follows and tested if the interaction effect is significant.
+
+Age grouping methods.
+
+-  Participants' age was grouped using baseline age. Age groups: 39 < 45, 45 < 50, 50 < 55, 55 < 60, and 60 < 67
+-  Participants' age was grouped as younger (below 65) and older (65 or above) adults dynamically. In this case participants' age group may change over time as they age.
+
+The following line graphs were drawn considering the baseline age groups (method 1). 
+
+```{r walk prop trend, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Preliminary/walk prop trend by age.png"))
+```
+
+Figure 1 shows that the proportion of walkers increase over time and younger age groups have higher proportion of walkers compared to older age groups over time.
+
+```{r table 1, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Preliminary/table 1.png"))
+```
+
+```{r table 2, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Preliminary/table 2.png"))
+```
+
+However, the above statistical models (Table 1 & 2) did not show significant interaction effect, suggesting no statistically significant differences in the longitudinal association between streetlight and transport walking for different age groups. This is also may be due to the transport walking measurement issue as we saw in my second paper (sex difference paper).
+
+```{r low vs high SL, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Preliminary/low vs high SL.png"))
+```
+
+Participants with low streetlights (Q1) and high streetlights (Q5) were separately illustrated in Figure 2. Low streetlights neighbourhoods seem to have low proportion of walkers and increases the proportion over time except for the 60 < 67 baseline age group. High streetlight neighbourhoods seem to have higher proportion of walkers compared to low streetlight neighbourhoods, and this proportion seem to stay constant over time.
+
+Regression models stratified for low and high streetlight also did not show any significant interactions between streetlight count and age group, suggesting no significant differences in the association for different age groups. Both types of age groupings were tested here.
+
+
+```{r low vs high density, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Preliminary/low vs high density.png"))
+```
+
+```{r low vs high connect, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Preliminary/low vs high connect.png"))
+```
+
+```{r low vs high landuse, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Preliminary/low vs high landuse.png"))
+```
+

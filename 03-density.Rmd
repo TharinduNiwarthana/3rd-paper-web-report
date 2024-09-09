@@ -1,0 +1,57 @@
+# Residential Density {#density}
+
+## Cross-sectional (wave 1) analysis
+
+### Using categorical residential density and age {-}
+
+```{r dense_cross mod 1, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/cross mod 1.png"))
+```
+
+```{r dense_cross mod 1 fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/cross mod 1 fig.png"))
+```
+
+### Using continuous residential density and age {-}
+
+```{r dense_cross mod 2, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/cross mod 2.png"))
+```
+
+```{r dense_cross mod 2 fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/cross mod 2 fig.png"))
+```
+
+## Longitudinal analysis
+
+### Using categorical residential density and age {-}
+
+```{r dense_long mod 1, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/long mod 1.png"))
+```
+
+```{r dense_long mod 1 fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/long mod 1 fig.png"))
+```
+
+### Using continuous residential density and age {-}
+
+```{r dense_long mod 2, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/long mod 2.png"))
+```
+
+```{r dense_long mod 2 fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Density/long mod 2 fig.png"))
+```
+
+
+<!-- You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.  -->
+
+<!-- Add a numbered part: `# (PART) Act one {-}` (followed by `# A chapter`) -->
+
+<!-- Add an unnumbered part: `# (PART\*) Act one {-}` (followed by `# A chapter`) -->
+
+<!-- Add an appendix as a special kind of un-numbered part: `# (APPENDIX) Other stuff {-}` (followed by `# A chapter`). Chapters in an appendix are prepended with letters instead of numbers. -->
+
+
+

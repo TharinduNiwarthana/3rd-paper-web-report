@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Land-use mix | Paper 3 Analysis</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Land-use mix | Paper 3 Analysis" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Land-use mix | Paper 3 Analysis" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  
+
+<meta name="author" content="Tharindu Niwarthana" />
+
+
+<meta name="date" content="2024-09-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="street-connectivity.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#summary-of-findings"><i class="fa fa-check"></i><b>1.1</b> Summary of findings</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="preliminary-analysis.html"><a href="preliminary-analysis.html"><i class="fa fa-check"></i><b>2</b> Preliminary Analysis</a></li>
+<li class="chapter" data-level="3" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>3</b> Streetlight</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="cross.html"><a href="cross.html#cross-sectional-wave-1-analysis"><i class="fa fa-check"></i><b>3.1</b> Cross-sectional (wave 1) analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="cross.html"><a href="cross.html#using-categorical-streetlight-and-age"><i class="fa fa-check"></i>Using categorical streetlight and age</a></li>
+<li class="chapter" data-level="" data-path="cross.html"><a href="cross.html#using-continuous-streetlight-and-age"><i class="fa fa-check"></i>Using continuous streetlight and age</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="cross.html"><a href="cross.html#longitudinal-analysis"><i class="fa fa-check"></i><b>3.2</b> Longitudinal analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="cross.html"><a href="cross.html#using-categorical-streetlight-and-age-1"><i class="fa fa-check"></i>Using categorical streetlight and age</a></li>
+<li class="chapter" data-level="" data-path="cross.html"><a href="cross.html#using-continuous-streetlight-and-age-1"><i class="fa fa-check"></i>Using continuous streetlight and age</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="residential-density.html"><a href="residential-density.html"><i class="fa fa-check"></i><b>4</b> Residential Density</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="residential-density.html"><a href="residential-density.html#cross-sectional-wave-1-analysis-1"><i class="fa fa-check"></i><b>4.1</b> Cross-sectional (wave 1) analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="residential-density.html"><a href="residential-density.html#using-categorical-residential-density-and-age"><i class="fa fa-check"></i>Using categorical residential density and age</a></li>
+<li class="chapter" data-level="" data-path="residential-density.html"><a href="residential-density.html#using-continuous-residential-density-and-age"><i class="fa fa-check"></i>Using continuous residential density and age</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="residential-density.html"><a href="residential-density.html#longitudinal-analysis-1"><i class="fa fa-check"></i><b>4.2</b> Longitudinal analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="residential-density.html"><a href="residential-density.html#using-categorical-residential-density-and-age-1"><i class="fa fa-check"></i>Using categorical residential density and age</a></li>
+<li class="chapter" data-level="" data-path="residential-density.html"><a href="residential-density.html#using-continuous-residential-density-and-age-1"><i class="fa fa-check"></i>Using continuous residential density and age</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="street-connectivity.html"><a href="street-connectivity.html"><i class="fa fa-check"></i><b>5</b> Street Connectivity</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="street-connectivity.html"><a href="street-connectivity.html#cross-sectional-wave-1-analysis-2"><i class="fa fa-check"></i><b>5.1</b> Cross-sectional (wave 1) analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="street-connectivity.html"><a href="street-connectivity.html#using-categorical-street-connectivity-and-age"><i class="fa fa-check"></i>Using categorical street connectivity and age</a></li>
+<li class="chapter" data-level="" data-path="street-connectivity.html"><a href="street-connectivity.html#using-continuous-street-connectivity-and-age"><i class="fa fa-check"></i>Using continuous street connectivity and age</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="street-connectivity.html"><a href="street-connectivity.html#longitudinal-analysis-2"><i class="fa fa-check"></i><b>5.2</b> Longitudinal analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="street-connectivity.html"><a href="street-connectivity.html#using-categorical-street-connectivity-and-age-1"><i class="fa fa-check"></i>Using categorical street connectivity and age</a></li>
+<li class="chapter" data-level="" data-path="street-connectivity.html"><a href="street-connectivity.html#using-continuous-street-connectivity-and-age-1"><i class="fa fa-check"></i>Using continuous street connectivity and age</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="land-use-mix.html"><a href="land-use-mix.html"><i class="fa fa-check"></i><b>6</b> Land-use mix</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="land-use-mix.html"><a href="land-use-mix.html#cross-sectional-wave-1-analysis-3"><i class="fa fa-check"></i><b>6.1</b> Cross-sectional (wave 1) analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="land-use-mix.html"><a href="land-use-mix.html#using-categorical-land-use-mix-and-age"><i class="fa fa-check"></i>Using categorical land-use mix and age</a></li>
+<li class="chapter" data-level="" data-path="land-use-mix.html"><a href="land-use-mix.html#using-continuous-land-use-mix-and-age"><i class="fa fa-check"></i>Using continuous land-use mix and age</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="land-use-mix.html"><a href="land-use-mix.html#longitudinal-analysis-3"><i class="fa fa-check"></i><b>6.2</b> Longitudinal analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="land-use-mix.html"><a href="land-use-mix.html#using-categorical-land-use-mix-and-age-1"><i class="fa fa-check"></i>Using categorical land-use mix and age</a></li>
+<li class="chapter" data-level="" data-path="land-use-mix.html"><a href="land-use-mix.html#using-continuous-land-use-mix-and-age-1"><i class="fa fa-check"></i>Using continuous land-use mix and age</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Paper 3 Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="land-use-mix" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Land-use mix<a href="land-use-mix.html#land-use-mix" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="cross-sectional-wave-1-analysis-3" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Cross-sectional (wave 1) analysis<a href="land-use-mix.html#cross-sectional-wave-1-analysis-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="using-categorical-land-use-mix-and-age" class="section level3 unnumbered hasAnchor">
+<h3>Using categorical land-use mix and age<a href="land-use-mix.html#using-categorical-land-use-mix-and-age" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="Results/Landuse/cross%20mod%201.png" width="100%" /></p>
+<p><img src="Results/Landuse/cross%20mod%201%20fig.png" width="100%" /></p>
+</div>
+<div id="using-continuous-land-use-mix-and-age" class="section level3 unnumbered hasAnchor">
+<h3>Using continuous land-use mix and age<a href="land-use-mix.html#using-continuous-land-use-mix-and-age" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="Results/Landuse/cross%20mod%202.png" width="100%" /></p>
+<p><img src="Results/Landuse/cross%20mod%202%20fig.png" width="100%" /></p>
+</div>
+</div>
+<div id="longitudinal-analysis-3" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Longitudinal analysis<a href="land-use-mix.html#longitudinal-analysis-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="using-categorical-land-use-mix-and-age-1" class="section level3 unnumbered hasAnchor">
+<h3>Using categorical land-use mix and age<a href="land-use-mix.html#using-categorical-land-use-mix-and-age-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="Results/Landuse/long%20mod%201.png" width="100%" /></p>
+<p><img src="Results/Landuse/long%20mod%201%20fig.png" width="100%" /></p>
+</div>
+<div id="using-continuous-land-use-mix-and-age-1" class="section level3 unnumbered hasAnchor">
+<h3>Using continuous land-use mix and age<a href="land-use-mix.html#using-continuous-land-use-mix-and-age-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="Results/Landuse/long%20mod%202.png" width="100%" /></p>
+<p><img src="Results/Landuse/long%20mod%202%20fig.png" width="100%" /></p>
+<!-- ## Equations -->
+<!-- Here is an equation. -->
+<!-- \begin{equation} -->
+<!--   f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k} -->
+<!--   (\#eq:binom) -->
+<!-- \end{equation} -->
+<!-- You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom). -->
+<!-- ## Theorems and proofs -->
+<!-- Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri). -->
+<!-- ::: {.theorem #tri} -->
+<!-- For a right triangle, if $c$ denotes the *length* of the hypotenuse -->
+<!-- and $a$ and $b$ denote the lengths of the **other** two sides, we have -->
+<!-- $$a^2 + b^2 = c^2$$ -->
+<!-- ::: -->
+<!-- Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>. -->
+<!-- ## Callout blocks -->
+<!-- The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html -->
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="street-connectivity.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05-land-use.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
