@@ -25,6 +25,13 @@ Interaction effect of streetlight, residential density, street connectivity and 
 -  Street connectivity did not show a significant interaction with age in both cross-sectional and longitudinal analysis. Interaction plot in the longitudinal analysis was parallel clearly showing not existence of the interaction. See chapter \@ref(connect)
 -  Land-use mix did not have a significant interaction with age in both types of models. Interaction plots in the longitudinal analysis looks nearly parallel supporting the statistical insignificance of the interaction term. See chapter \@ref(landuse)
 
+### Longitudinal models summary table {-}
+
+These models used continuous variables of the BE attributes and age.
+
+```{r long mod 2 summary table, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/About/long mod 2 summary table.png"))
+```
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
