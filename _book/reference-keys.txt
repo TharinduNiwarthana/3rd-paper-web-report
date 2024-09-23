@@ -14,5 +14,5 @@ landuse
 cross-sectional-wave-1-analysis-3
 longitudinal-analysis-3
 walk
-cross-sectional-wave-1-analysis-4
-longitudinal-analysis-4
+main-effects-analysis
+interaction-effects-analysis

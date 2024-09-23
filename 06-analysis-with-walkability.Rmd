@@ -1,0 +1,103 @@
+# Analysis including walkability index {#walk}
+
+As we discussed in the meeting, I dropped streetlight and added walkability index to this analysis. Here, only the longitudinal models using continuous BE attributes and age, are presented.
+
+Walkability index was calculated averaging the sum of standardized residential density, street connectivity, and land-use mix variables. These variables were standardized at each wave instead of all five waves data pooling together. Then the index was re-scaled to range between 0 and 100 for better interpretation.
+
+## Main effects analysis
+
+### Summary of findings {-}
+
+```{r main effects summary table, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/main effects summary table.png"))
+```
+
+-   Main effects of all the BE attributes explored are statistically significant for positive associations
+-   One unit increase in residential density is 
+-   There is a 1.04 odds for a participant to be a walker with one unit increase in residential density (Model 1).
+-   There is a 1.03 odds for a participant to be a walker with one unit increase in street connectivity (Model 2).
+-   There is a 5.66 odds for a participant to be a walker with one unit increase in land-use mix (Model 3).
+-   There is a 1.03 odds for a participant to be a walker with one unit increase in walkability (Model 5).
+-   The effect of land-use mix largely attunuated compared to other variables when the models were adjusted for other two BE attributes (Model 4).
+-   Please note that these odds ratios are not comparable across variables as the variables are not standardized.
+
+#### Residential density model (Model 1) {-}
+
+```{r den main mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/den main mod.png"))
+```
+
+#### Street connectivity model (Model 2) {-}
+
+```{r con main mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/con main mod.png"))
+```
+
+#### Land-use mix model (Model 3) {-}
+
+```{r lan main mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/lan main mod.png"))
+```
+
+#### Full main effects model (Model 4) {-}
+
+```{r full main mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/full main mod.png"))
+```
+
+#### Walkability index model (Model 5) {-}
+
+```{r walk main mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/walk main mod.png"))
+```
+
+## Interaction effects analysis
+
+### Summary of findings {-}
+
+```{r interaction effects summary table, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/interaction effects summary table.png"))
+```
+
+-   Only residential density and scaled walkability index variables showed a significant interaction effects with age on transport walking.
+-   Though the interaction effect between land-use mix and age was statistically insignificant, its interaction plot showed a large difference in the proportions of walkers at low levels of land-use mix compared to high levels.
+
+#### Residential density interaction model (Model 1) {-}
+
+```{r den int mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/den int mod.png"))
+```
+
+```{r den int mod fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/den int mod fig.png"))
+```
+
+#### Street connectivity interaction model (Model 2) {-}
+
+```{r con int mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/con int mod.png"))
+```
+
+```{r con int mod fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/con int mod fig.png"))
+```
+
+#### Land-use mix interaction model (Model 3) {-}
+
+```{r lan int mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/lan int mod.png"))
+```
+
+```{r lan int mod fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/lan int mod fig.png"))
+```
+
+#### Walkability index interaction model (Model 4) {-}
+
+```{r walk int mod, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/walk int mod.png"))
+```
+
+```{r walk int mod fig, echo=FALSE, out.width = '100%'}
+knitr::include_graphics(rep("Results/Analysis with walkability/walk int mod fig.png"))
+```

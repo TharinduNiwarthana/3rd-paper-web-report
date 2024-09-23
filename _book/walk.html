@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Walkability | 3rd Paper Analysis - Age Differences</title>
+  <title>Chapter 7 Analysis including walkability index | 3rd Paper Analysis - Age Differences</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Walkability | 3rd Paper Analysis - Age Differences" />
+  <meta property="og:title" content="Chapter 7 Analysis including walkability index | 3rd Paper Analysis - Age Differences" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Walkability | 3rd Paper Analysis - Age Differences" />
+  <meta name="twitter:title" content="Chapter 7 Analysis including walkability index | 3rd Paper Analysis - Age Differences" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -29,7 +29,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <meta name="author" content="Tharindu Niwarthana" />
 
 
-<meta name="date" content="2024-09-21" />
+<meta name="date" content="2024-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -142,17 +142,15 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="" data-path="landuse.html"><a href="landuse.html#using-continuous-land-use-mix-and-age-1"><i class="fa fa-check"></i>Using continuous land-use mix and age</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="walk.html"><a href="walk.html"><i class="fa fa-check"></i><b>7</b> Walkability</a>
+<li class="chapter" data-level="7" data-path="walk.html"><a href="walk.html"><i class="fa fa-check"></i><b>7</b> Analysis including walkability index</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="walk.html"><a href="walk.html#cross-sectional-wave-1-analysis-4"><i class="fa fa-check"></i><b>7.1</b> Cross-sectional (wave 1) analysis</a>
+<li class="chapter" data-level="7.1" data-path="walk.html"><a href="walk.html#main-effects-analysis"><i class="fa fa-check"></i><b>7.1</b> Main effects analysis</a>
 <ul>
-<li class="chapter" data-level="" data-path="walk.html"><a href="walk.html#using-categorical-walkability-and-age"><i class="fa fa-check"></i>Using categorical walkability and age</a></li>
-<li class="chapter" data-level="" data-path="walk.html"><a href="walk.html#using-continuous-walkability-and-age"><i class="fa fa-check"></i>Using continuous walkability and age</a></li>
+<li class="chapter" data-level="" data-path="walk.html"><a href="walk.html#summary-of-findings-1"><i class="fa fa-check"></i>Summary of findings</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="walk.html"><a href="walk.html#longitudinal-analysis-4"><i class="fa fa-check"></i><b>7.2</b> Longitudinal analysis</a>
+<li class="chapter" data-level="7.2" data-path="walk.html"><a href="walk.html#interaction-effects-analysis"><i class="fa fa-check"></i><b>7.2</b> Interaction effects analysis</a>
 <ul>
-<li class="chapter" data-level="" data-path="walk.html"><a href="walk.html#using-categorical-walkability-and-age-1"><i class="fa fa-check"></i>Using categorical walkability and age</a></li>
-<li class="chapter" data-level="" data-path="walk.html"><a href="walk.html#using-continuous-walkability-and-age-1"><i class="fa fa-check"></i>Using continuous walkability and age</a></li>
+<li class="chapter" data-level="" data-path="walk.html"><a href="walk.html#summary-of-findings-2"><i class="fa fa-check"></i>Summary of findings</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -176,52 +174,76 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 
             <section class="normal" id="section-">
 <div id="walk" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Walkability<a href="walk.html#walk" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Walkability index was calculated averaging the sum of standardized residential density, street connectivity, and land-use mix variables. These variables were standardized at each wave instead of pooling together. Then the index was re-scaled to range between 0 and 100 for better intrepretation.</p>
-<div id="cross-sectional-wave-1-analysis-4" class="section level2 hasAnchor" number="7.1">
-<h2><span class="header-section-number">7.1</span> Cross-sectional (wave 1) analysis<a href="walk.html#cross-sectional-wave-1-analysis-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="using-categorical-walkability-and-age" class="section level3 unnumbered hasAnchor">
-<h3>Using categorical walkability and age<a href="walk.html#using-categorical-walkability-and-age" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<!-- ```{r connect_cross mod 1, echo=FALSE, out.width = '100%'} -->
-<!-- knitr::include_graphics(rep("Results/Connectivity/cross mod 1.png")) -->
-<!-- ``` -->
-<!-- ```{r connect_cross mod 1 fig, echo=FALSE, out.width = '100%'} -->
-<!-- knitr::include_graphics(rep("Results/Connectivity/cross mod 1 fig.png")) -->
-<!-- ``` -->
+<h1><span class="header-section-number">Chapter 7</span> Analysis including walkability index<a href="walk.html#walk" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>As we discussed in the meeting, I dropped streetlight and added walkability index to this analysis. Here, only the longitudinal models using continuous BE attributes and age, are presented.</p>
+<p>Walkability index was calculated averaging the sum of standardized residential density, street connectivity, and land-use mix variables. These variables were standardized at each wave instead of all five waves data pooling together. Then the index was re-scaled to range between 0 and 100 for better interpretation.</p>
+<div id="main-effects-analysis" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Main effects analysis<a href="walk.html#main-effects-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="summary-of-findings-1" class="section level3 unnumbered hasAnchor">
+<h3>Summary of findings<a href="walk.html#summary-of-findings-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="Results/Analysis%20with%20walkability/main%20effects%20summary%20table.png" width="100%" /></p>
+<ul>
+<li>Main effects of all the BE attributes explored are statistically significant for positive associations</li>
+<li>One unit increase in residential density is</li>
+<li>There is a 1.04 odds for a participant to be a walker with one unit increase in residential density (Model 1).</li>
+<li>There is a 1.03 odds for a participant to be a walker with one unit increase in street connectivity (Model 2).</li>
+<li>There is a 5.66 odds for a participant to be a walker with one unit increase in land-use mix (Model 3).</li>
+<li>There is a 1.03 odds for a participant to be a walker with one unit increase in walkability (Model 5).</li>
+<li>The effect of land-use mix largely attunuated compared to other variables when the models were adjusted for other two BE attributes (Model 4).</li>
+<li>Please note that these odds ratios are not comparable across variables as the variables are not standardized.</li>
+</ul>
+<div id="residential-density-model-model-1" class="section level4 unnumbered hasAnchor">
+<h4>Residential density model (Model 1)<a href="walk.html#residential-density-model-model-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/den%20main%20mod.png" width="100%" /></p>
 </div>
-<div id="using-continuous-walkability-and-age" class="section level3 unnumbered hasAnchor">
-<h3>Using continuous walkability and age<a href="walk.html#using-continuous-walkability-and-age" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<!-- ```{r connect_cross mod 2, echo=FALSE, out.width = '100%'} -->
-<!-- knitr::include_graphics(rep("Results/Connectivity/cross mod 2.png")) -->
-<!-- ``` -->
-<!-- ```{r connect_cross mod 2 fig, echo=FALSE, out.width = '100%'} -->
-<!-- knitr::include_graphics(rep("Results/Connectivity/cross mod 2 fig.png")) -->
-<!-- ``` -->
+<div id="street-connectivity-model-model-2" class="section level4 unnumbered hasAnchor">
+<h4>Street connectivity model (Model 2)<a href="walk.html#street-connectivity-model-model-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/con%20main%20mod.png" width="100%" /></p>
+</div>
+<div id="land-use-mix-model-model-3" class="section level4 unnumbered hasAnchor">
+<h4>Land-use mix model (Model 3)<a href="walk.html#land-use-mix-model-model-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/lan%20main%20mod.png" width="100%" /></p>
+</div>
+<div id="full-main-effects-model-model-4" class="section level4 unnumbered hasAnchor">
+<h4>Full main effects model (Model 4)<a href="walk.html#full-main-effects-model-model-4" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/full%20main%20mod.png" width="100%" /></p>
+</div>
+<div id="walkability-index-model-model-5" class="section level4 unnumbered hasAnchor">
+<h4>Walkability index model (Model 5)<a href="walk.html#walkability-index-model-model-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/walk%20main%20mod.png" width="100%" /></p>
 </div>
 </div>
-<div id="longitudinal-analysis-4" class="section level2 hasAnchor" number="7.2">
-<h2><span class="header-section-number">7.2</span> Longitudinal analysis<a href="walk.html#longitudinal-analysis-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="using-categorical-walkability-and-age-1" class="section level3 unnumbered hasAnchor">
-<h3>Using categorical walkability and age<a href="walk.html#using-categorical-walkability-and-age-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<!-- ```{r connect_long mod 1, echo=FALSE, out.width = '100%'} -->
-<!-- knitr::include_graphics(rep("Results/Connectivity/long mod 1.png")) -->
-<!-- ``` -->
-<!-- ```{r connect_long mod 1 fig, echo=FALSE, out.width = '100%'} -->
-<!-- knitr::include_graphics(rep("Results/Connectivity/long mod 1 fig.png")) -->
-<!-- ``` -->
 </div>
-<div id="using-continuous-walkability-and-age-1" class="section level3 unnumbered hasAnchor">
-<h3>Using continuous walkability and age<a href="walk.html#using-continuous-walkability-and-age-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><img src="Results/Walkability/long%20mod%202.png" width="100%" /></p>
-<p><img src="Results/Walkability/long%20mod%202%20fig.png" width="100%" /></p>
-<!-- ## Footnotes -->
-<!-- Footnotes are put inside the square brackets after a caret `^[]`. Like this one ^[This is a footnote.].  -->
-<!-- ## Citations -->
-<!-- Reference items in your bibliography file(s) using `@key`. -->
-<!-- For example, we are using the **bookdown** package [@R-bookdown] (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and **knitr** [@xie2015] (this citation was added manually in an external file book.bib).  -->
-<!-- Note that the `.bib` files need to be listed in the index.Rmd with the YAML `bibliography` key. -->
-<!-- The RStudio Visual Markdown Editor can also make it easier to insert citations: <https://rstudio.github.io/visual-markdown-editing/#/citations> -->
+<div id="interaction-effects-analysis" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Interaction effects analysis<a href="walk.html#interaction-effects-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="summary-of-findings-2" class="section level3 unnumbered hasAnchor">
+<h3>Summary of findings<a href="walk.html#summary-of-findings-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="Results/Analysis%20with%20walkability/interaction%20effects%20summary%20table.png" width="100%" /></p>
+<ul>
+<li>Only residential density and scaled walkability index variables showed a significant interaction effects with age on transport walking.</li>
+<li>Though the interaction effect between land-use mix and age was statistically insignificant, its interaction plot showed a large difference in the proportions of walkers at low levels of land-use mix compared to high levels.</li>
+</ul>
+<div id="residential-density-interaction-model-model-1" class="section level4 unnumbered hasAnchor">
+<h4>Residential density interaction model (Model 1)<a href="walk.html#residential-density-interaction-model-model-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/den%20int%20mod.png" width="100%" /></p>
+<p><img src="Results/Analysis%20with%20walkability/den%20int%20mod%20fig.png" width="100%" /></p>
+</div>
+<div id="street-connectivity-interaction-model-model-2" class="section level4 unnumbered hasAnchor">
+<h4>Street connectivity interaction model (Model 2)<a href="walk.html#street-connectivity-interaction-model-model-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/con%20int%20mod.png" width="100%" /></p>
+<p><img src="Results/Analysis%20with%20walkability/con%20int%20mod%20fig.png" width="100%" /></p>
+</div>
+<div id="land-use-mix-interaction-model-model-3" class="section level4 unnumbered hasAnchor">
+<h4>Land-use mix interaction model (Model 3)<a href="walk.html#land-use-mix-interaction-model-model-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/lan%20int%20mod.png" width="100%" /></p>
+<p><img src="Results/Analysis%20with%20walkability/lan%20int%20mod%20fig.png" width="100%" /></p>
+</div>
+<div id="walkability-index-interaction-model-model-4" class="section level4 unnumbered hasAnchor">
+<h4>Walkability index interaction model (Model 4)<a href="walk.html#walkability-index-interaction-model-model-4" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="Results/Analysis%20with%20walkability/walk%20int%20mod.png" width="100%" /></p>
+<p><img src="Results/Analysis%20with%20walkability/walk%20int%20mod%20fig.png" width="100%" /></p>
 
+</div>
 </div>
 </div>
 </div>
@@ -262,7 +284,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-walkability.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-analysis-with-walkability.Rmd",
 "text": "Edit"
 },
 "history": {
